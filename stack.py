@@ -6,7 +6,7 @@ class ArrayStack:
         return len(self.stack)
 
     def is_empty(self):
-        return len(self.stack) == 0
+        return self.get_size() == 0
 
     def push(self, data):
         self.stack.append(data)
@@ -33,7 +33,7 @@ class LinkedListStack:
         return self.size
 
     def is_empty(self):
-        return self.size == 0
+        return self.get_size() == 0
 
     def push(self, data):
         self.head = Node(data, self.head)
@@ -48,4 +48,3 @@ class LinkedListStack:
 
     def peek(self):
         return 'Empty' if self.is_empty() else self.head.data
-
