@@ -17,3 +17,6 @@ class ArrayQueue:
     def peek(self):
         return 'Empty' if self.is_empty() else self.queue[0]
 
+
+class LinkedListQueue:
+    pass
